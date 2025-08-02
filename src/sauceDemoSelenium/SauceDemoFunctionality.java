@@ -1,37 +1,34 @@
 package sauceDemoSelenium;
 
 import java.time.Duration;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.TimeoutException;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;  
+import org.openqa.selenium.support.ui.WebDriverWait; 
+import org.testng.annotations.Test;
 
 public class SauceDemoFunctionality {
-
-	public static void main(String[] args) throws InterruptedException {
+	@Test
+	public void SauceDemoAutomate() throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.driver.chromedriver",
 				"C://Users//hp//Downloads//SeleniumHandsons//SeleniumFirstProject//chromedriver.exe");
 
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--incognito");
-		options.addArguments("--disable-notifications");
-		options.addArguments("--disable-save-password-bubble");
-
-		Map<String, Object> prefs = new HashMap<>();
-		prefs.put("credentials_enable_service", false);
-		prefs.put("profile.password_manager_enabled", false);
-
-		options.setExperimentalOption("prefs", prefs);
-		WebDriver driver = new ChromeDriver(options);
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--incognito");
+//		options.addArguments("--disable-notifications");
+//		options.addArguments("--disable-save-password-bubble");
+//
+//		Map<String, Object> prefs = new HashMap<>();
+//		prefs.put("credentials_enable_service", false);
+//		prefs.put("profile.password_manager_enabled", false);
+//
+//		options.setExperimentalOption("prefs", prefs);
+		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://www.saucedemo.com/");
 		driver.manage().window().maximize();

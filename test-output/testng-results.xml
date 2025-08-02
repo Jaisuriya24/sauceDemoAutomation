@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-02T18:23:07 IST" name="Default suite" finished-at="2025-08-02T18:23:39 IST" duration-ms="31708">
+    <groups>
+    </groups>
+    <test started-at="2025-08-02T18:23:07 IST" name="Default test" finished-at="2025-08-02T18:23:39 IST" duration-ms="31708">
+      <class name="sauceDemoSelenium.SauceDemoFunctionality">
+        <test-method signature="SauceDemoAutomate()[pri:0, instance:sauceDemoSelenium.SauceDemoFunctionality@a530d0a]" started-at="2025-08-02T18:23:07 IST" name="SauceDemoAutomate" finished-at="2025-08-02T18:23:39 IST" duration-ms="31662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SauceDemoAutomate -->
+      </class> <!-- sauceDemoSelenium.SauceDemoFunctionality -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
